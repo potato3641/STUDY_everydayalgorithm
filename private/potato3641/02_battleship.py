@@ -170,7 +170,7 @@ while True:
         computer_attacked[computer_target[0]][computer_target[1]] = True
         print(f'컴퓨터는 플레이어의 해역 {computer_target[0]+1}, {computer_target[1]+1} 칸을 공격하였고, 플레이어의 배는 피격되었습니다.')
         print(f'플레이어의의 배는 {player_ship_cnt}개 남았습니다.')
-        if not computer_ship_cnt:
+        if not player_ship_cnt:
             print(f'게임이 종료되었습니다! {round}라운드 만에 컴퓨터의 승리입니다!')
             break
     # 2-7) 컴퓨터의 공격이 실패한 경우
