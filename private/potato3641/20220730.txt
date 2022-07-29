@@ -1,3 +1,10 @@
+'''
+사전지식) 비트와 아스키코드에 대한 이해가 필요
+8bit짜리 세 글자 abc가 있음. ( ord(’a’) = 97, ord(’b’) = 98, ord(’c’) = 99 )
+24bit짜리 버퍼에 위의 세 글자 0b01100001 0b01100010 0b01100011가 들어가서
+6bit 011000 010110 001001 100011 이렇게 잘려서
+base64 기반 6bit짜리 네 글자 YWJj가 된 것을 다시 원복하는 문제
+'''
 T = int(input())
 base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 # 문제에 주어진 표-1을 미리 저장
