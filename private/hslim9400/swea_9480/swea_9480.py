@@ -34,15 +34,15 @@ for test_case in range(T):
             word_sets.append(word_sets[i]+[word])
 
     
-    for word_set in word_sets:
-        for alp in alps:
-            for word in word_set:
+    for word_set in word_sets: #단어세트를 선택
+        for alp in alps: #알파벳을 선택
+            for word in word_set: #단어세트 내에서
                 if alp in word:
-                    break
+                    break #알파벳이 있으면 다음 알파벳
             else:
-                break
+                break #알파벳이 없으면 다음 단어세트
         else:
-            ans = ans + 1    
+            ans = ans + 1 #모든 알파벳을 확인하면 답+1
             
 
         
