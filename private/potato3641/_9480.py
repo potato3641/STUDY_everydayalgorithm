@@ -35,4 +35,3 @@ for test_case in range(1, T + 1):
             if len(set(list(''.join(j)))) == 26:
                 rst += 1
     print(f'#{test_case} {rst}')
-        
