@@ -1,4 +1,4 @@
-@echo off.
+@echo off
 cd ../..
 git pull origin master
 git add .
