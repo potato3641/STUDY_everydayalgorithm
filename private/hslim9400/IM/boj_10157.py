@@ -8,9 +8,9 @@ r, c = 0, 0
 count = 1
 
 ans = [0]
-for _ in range(R*C):
+for _ in range(R*C):  # 달팽이
     board[r][c] = count
-    if count == target:
+    if count == target:  # 표적 번호를 받으면 종료, 문제는 (1,1)이 기준이기 때문에 1씩 더한다.
         ans = [r+1, c+1]
     if (0 <= r+dr[d] < R) and (0 <= c+dc[d] < C) and (board[r+dr[d]][c+dc[d]]) == 0:
         pass
