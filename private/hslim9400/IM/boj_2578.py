@@ -20,8 +20,8 @@ while True:  # 한 사이클당 숫자 한개
         ver_bingo = 0
         hor_bingo = 0
         for j in range(5):
-            ver_bingo += board[j][i]  # 가로 빙고
-            hor_bingo += board[i][j]  # 세로 빙고
+            ver_bingo += board[j][i]  # 세로 빙고
+            hor_bingo += board[i][j]  # 가로 빙고
             if i == j:
                 cross_bingo_1 += board[i][j]  # 대각빙고 두개
             if i == 4 - j:
